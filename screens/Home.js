@@ -4,7 +4,7 @@ import { Image } from 'react-native';
 import { Alert } from 'react-native';
 import debounce from 'lodash.debounce';
 
-import { getSectionListData, useUpdateEffect } from '../utils';
+import { getSectionListData, useUpdateEffect } from '../util/utils';
 import { Searchbar } from 'react-native-paper';
 import {
   createTable,
@@ -17,7 +17,6 @@ import Filters from '../components/Filter';
 import { SectionList } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Pressable, ScrollView } from 'react-native';
-import { FlatList } from 'react-native';
 
 const API_URL =
   'https://raw.githubusercontent.com/Meta-Mobile-Developer-PC/Working-With-Data-API/main/capstone.json';
